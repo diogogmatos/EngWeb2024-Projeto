@@ -4,7 +4,7 @@
 
 A **UniShare** é uma plataforma web desenvolvida no âmbito da unidade curricular de Engenharia Web no ano letivo de 2023/2024. O seu principal objetivo é ser um _hub_ de materiais de apoio ao estudo para toda a comunidade académica e para qualquer curso ou unidade curricular.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/diogogmatos/EngWeb2024-Projeto/blob/main/README.md)
 
 ## 🏆 Results
 
