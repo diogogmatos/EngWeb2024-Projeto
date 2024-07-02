@@ -2,270 +2,279 @@
 
 # 🎓 UniShare
 
-A **UniShare** é uma plataforma web desenvolvida no âmbito da unidade curricular de Engenharia Web no ano letivo de 2023/2024. O seu principal objetivo é ser um _hub_ de materiais de apoio ao estudo para toda a comunidade académica e para qualquer curso ou unidade curricular.
+**UniShare** is a web platform developed as part of the Web Engineering course for the academic year 2023/2024. Its main goal is to serve as a hub of study support materials for the entire academic community, regardless of course or subject.
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.md) [![pt-pt](https://img.shields.io/badge/lang-pt--pt-green.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.pt-pt.md)
 
 ## 🏆 Results
 
 > 🏅 **20/20**
 
-## 📒 Funcionalidades
+## 📒 Features
 
 ### Dashboard
 
 ![Dashboard](/assets/full_page.png)
 
-O foco central da plataforma é o _dashboard_, onde o utilizador pode pesquisar, filtrar e adicionar recursos, assim como facilmente navegar para qualquer outra página ou diálogo do sistema. Toda a informação mais importante está contida na página inicial do dashboard.
+The central focus of the platform is the dashboard, where users can search, filter, and add resources, as well as easily navigate to any other page or dialog in the system. All the most important information is contained on the dashboard's main page.
 
 ### Navbar
 
 ![Navbar](/assets/navbar.png)
 
-A _navbar_ permite ao utilizador navegar entre diferentes visões da página principal do dashboard.
+The navbar allows users to navigate between different views on the main dashboard page.
 
-A página **Popular** apresenta os recursos ordenados por ordem decrescente de popularidade, ou seja, os recursos com mais interações serão apresentados mais acima na lista. Esta unidade de popularidade é calculada através de um algoritmo onde cada tipo de interação tem um diferente peso na popularidade do recurso.
+The **Popular** page displays resources sorted by descending popularity, meaning the resources with the most interactions are shown higher up the list. This popularity metric is calculated using an algorithm where each type of interaction has a different weight on the resource's popularity.
 
-A página **Newest** apresenta os recursos adicionados mais recentemente à plataforma, permitindo visualizar rapidamente as últimas adições por parte dos utilizadores.
+The **Newest** page shows the most recently added resources to the platform, allowing users to quickly see the latest additions by other users.
 
-Para além disso, a _navbar_ permite ao utilizador aceder à sua página de perfil, clicando no seu nome no canto superior esquerdo. Exploramos esta página mais à frente.
+Additionally, the navbar allows users to access their profile page by clicking their name in the upper left corner. We explore this page further below.
 
-### Favoritos
+### Favorites
 
 ![Favorites](/assets/favorites.png)
 
-A página de favoritos permite a um utilizador **autenticado** visualizar os recursos que 'favoritou' ao longo do tempo.
+The favorites page allows authenticated users to view the resources they have favorited over time.
 
 ### Search Bar
 
 ![SearhBar](/assets/searchbar.png)
 
-A barra de pesquisa permite ao utilizador pesquisar o grande conjunto de recursos visíveis no ecrã através de palavras chave. O utilizador pode pesquisar por qualquer palavra de qualquer campo principal de um recurso, nomeadamente pelo seu título, descrição, hashtags, curso, cadeira, tipo, data de criação, utilizador e até pelo formato do documento (PDF, ZIP, etc).
+The search bar allows users to search the large set of visible resources on the screen using keywords. Users can search by any word in any main field of a resource, including its title, description, hashtags, course, subject, type, creation date, user, and even document format (PDF, ZIP, etc.).
 
-### Filtros
+### Filters
 
-| Padrão                          | Pesquisa por Curso                         | Pesquisa por UC                           |
-| ------------------------------- | ------------------------------------------ | ----------------------------------------- |
+| Default                          | Search by Course                         | Search by Subject                        |
+| ------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | ![Filters](/assets/filters.png) | ![FiltersCurso](/assets/filter_search.png) | ![FiltersUC](/assets/subjects_filter.png) |
 
-Os filtros permitem uma fácil e rápida filtragem dos recursos apresentados de acordo com o seu tipo, curso ou unidade curricular. O utilizador pode facilmente pesquisar o curso ou unidade curricular no menu de seleção de cada um destes.
+Filters allow easy and quick filtering of presented resources by type, course, or subject. Users can easily search for the course or subject in the selection menu for each.
 
-### Adicionar Recurso
+### Add Resource
 
 ![AddResource](/assets/resource_dialog.png)
 
-O botão **Add Resource** leva utilizadores autenticados para um diálogo onde podem facilmente submeter o seu recurso e preencher as informações necessárias. Também aqui os campos de escolha de curso e unidade curricular permitem a pesquisa pelas opções.
+The **Add Resource** button takes authenticated users to a dialog where they can easily submit their resource and fill in the necessary information. Here too, the course and subject selection fields allow for searching options.
 
-Um utilizador **admin** pode, neste diálogo, adicionar novas opções de tipo de recurso, curso ou unidade curricular.
+An **admin** user can add new resource types, courses, or subjects in this dialog.
 
 ### Resource Card
 
 ![ResourceCard](/assets/card.png)
 
-O _card_ de um recurso funciona como uma porta para um conjunto de interações com o utilizador. De uma forma compacta apresenta todas as informações essenciais relativas ao recurso e à interação da restante comunidade com o mesmo. Permite também que o utilizador facilmente interaja com o recurso e aceda a configurações do mesmo.
+A resource card acts as a gateway to a set of user interactions. It compactly presents all essential information about the resource and the community's interaction with it. It also allows users to easily interact with the resource and access its settings.
 
-Um recurso contém um conjunto de atributos essenciais:
+A resource contains a set of essential attributes:
 
-- Tipo (Relatório, Apontamento, Teste, Exame, etc) (Expansível)
-- Título
-- Descrição (Opcional)
-- Hashtags (Opcional)
-- Unidade Curricular
-- Curso
+- Type (Report, Note, Test, Exam, etc.) (Expandable)
+- Title
+- Description (Optional)
+- Hashtags (Optional)
+- Subject
+- Course
 
-Existe uma variedade de interações possíveis com um recurso:
+There are a variety of possible interactions with a resource:
 
-- _Upvote_ ('Votar para cima')
-- _Downvote_ ('Votar para baixo')
-- Comentar
-- Transferir
-- 'Favoritar'
+- Upvote
+- Downvote
+- Comment
+- Download
+- Favorite
 
-| Utilizador Padrão               | Admin                                      |
-| ------------------------------- | ------------------------------------------ |
+| Standard User               | Admin                                      |
+| --------------------------- | ------------------------------------------ |
 | ![Actions](/assets/actions.png) | ![AdminActions](/assets/actions_admin.png) |
 
-Caso o utilizador seja dono do recurso, tem acesso a um conjunto de opções: **Editar**, **Arquivar** ou **Eliminar**. Caso seja um utilizador administrador do sistema, tem ainda a opção de **Bloquear** o recurso, não permitindo que a sua visibilidade seja alterada.
+If the user owns the resource, they have access to a set of options: **Edit**, **Archive**, or **Delete**. If they are a system admin, they also have the option to **Lock** the resource, preventing its visibility from being changed.
 
 ![Hover](/assets/hover.png)
 
-Finalmente, é possível ver detalhes acerca do utilizador publicador do recurso facilmente através de um _hover_ do rato sobre o seu nome.
+Finally, users can easily see details about the resource publisher by hovering over their name.
 
-### Comentários
+### Comments
 
 ![Comment](/assets/comment.png)
 
-O clique no ícone de comentário de um recurso leva para um diálogo que permite a qualquer utilizador ingressar numa discussão relativa a um determinado recurso nos comentários, ou simplesmente deixar uma mensagem de agradecimento.
+Clicking on a resource's comment icon takes users to a dialog where they can join a discussion about the resource in the comments or simply leave a thank you message.
 
-### Página de Recurso
+### Resource Page
 
 ![ResourcePage](/assets/resourcepage.png)
 
-A página de recurso permite ao utilizador uma visão expandida da informação do recurso, com acesso à lista completa de comentários efetuados no mesmo e até a uma pré-visualização do conteúdo do ficheiro, para formatos compatíveis (PDF, PNG, JPEG ou JPG).
+The resource page allows users an expanded view of the resource's information, with access to the full list of comments and even a preview of the file's content for compatible formats (PDF, PNG, JPEG, or JPG).
 
-### Editar Recursos
+### Edit Resources
 
 ![Edit](/assets/edit_resource.png)
 
-O clique no ícone de edição do submenu de um recurso leva para um diálogo que permite ao utilizador facilmente editar as principais informações do seu recurso publicado através de uma interface familiar, não sendo possível editar o ficheiro publicado mas apenas as meta informações associadas ao mesmo.
+Clicking the edit icon in a resource's submenu takes users to a dialog where they can easily edit the main information of their published resource through a familiar interface, though it is not possible to edit the published file, only the associated meta information.
 
-### Página de Perfil
+### Profile Page
 
 ![Profile](/assets/profile.png)
 
-Um utilizador consegue aceder à sua página de perfil ou à de qualquer outro utilizador através de um clique no seu nome em qualquer local da interface. Esta página apresenta os recursos que o utilizador publicou, os seus favoritos, os comentários que realizou e ainda os recursos que 'votou para cima' ou _upvoted_.
+Users can access their profile page or any other user's profile by clicking their name anywhere in the interface. This page shows the resources the user has published, their favorites, the comments they have made, and the resources they have upvoted.
 
 ![ProfileComments](/assets/profile_comments.png)
 
-Se o utilizador estiver a visualizar o seu próprio perfil, tem ainda a opção de editar o perfil ou aceder às configurações da sua conta.
+If the user is viewing their own profile, they also have the option to edit the profile or access account settings.
 
-| Editar Perfil                            | Configurações de Conta                           |
-| ---------------------------------------- | ------------------------------------------------ |
+| Edit Profile                            | Account Settings                           |
+| --------------------------------------- | ------------------------------------------ |
 | ![EditProfile](/assets/edit_profile.png) | ![AccountSettings](/assets/account_settings.png) |
 
-### Paginação
+### Pagination
 
-De modo a conseguir lidar com um possível elevado número de recursos, todas as páginas que listam recursos implementam paginação, ao nível da API, onde apenas os recursos da página atual são apresentados. Esta solução permite manter a eficiência da plataforma em contextos com grandes números de entradas na base de dados.
+To handle a potentially high number of resources, all resource-listing pages implement pagination at the API level, where only the resources on the current page are displayed. This solution helps maintain platform efficiency in contexts with large database entries.
 
 ![Pagination](/assets/pagination.png)
 
-O tamanho de uma página é definido por um número de recursos e pode ser configurado pelo utilizador em [lib/config.ts](/lib/config.ts).
+The page size is defined by a number of resources and can be configured by the user in [lib/config.ts](/lib/config.ts).
 
-### Entrar / Registar
+### Sign In / Sign Up
 
 | Sign in                       | Sign up                       |
 | ----------------------------- | ----------------------------- |
 | ![Signin](/assets/signin.png) | ![Signup](/assets/signup.png) |
 
-O utilizador tem a opção de se registar na conta utilizando um email + password ou então utilizando um serviço externo como o _GitHub_.
+Users can sign up using an email and password or an external service like GitHub.
 
-As passwords são armazenadas de forma segura através da utilização de _hashing_ com a ajuda do pacote _bycript_ do npm.
+Passwords are securely stored using hashing with the help of the npm package bcrypt.
 
-### Aparência
+### Appearance
 
 | Light Mode                          | Dark Mode                         |
 | ----------------------------------- | --------------------------------- |
 | ![LightMode](/assets/full_page.png) | ![DarkMode](/assets/darkmode.png) |
 
-A plataforma conta ainda com a escolha entre um modo de aparência clara ou escura que se estende ao longo de todo o sistema.
+The platform also offers a choice between a light or dark appearance mode that extends throughout the system.
 
-## 🔒 Níveis de Acesso
+## 🔒 Access Levels
 
-A aplicação conta com 3 diferentes níveis de acesso, **Administrador**, **Produtor** e **Consumidor**, sendo os dois últimos dependentes de cada recurso individualmente, podendo um utilizador/administrador ser consumidor de um recurso e produtor de um outro.
+The application has 3 different access levels: **Administrator**, **Producer**, and **Consumer**, with the latter two depending on each individual resource. A user/admin can be a consumer of one resource and a producer of another.
 
-Um utilizador administrador tem as seguintes permissões acrescidas:
+An admin user has the following additional permissions:
 
-- Editar recurso
-- Eliminar recurso
-- Arquivar/Desarquivar recurso (alterar visibilidade do recurso)
-- Bloquear/Desbloquear recurso (bloquear a alteração da visibilidade por parte do utilizador produtor)
-- Adicionar tipo de recurso
-- Adicionar curso
-- Adicionar unidade curricular
+- Edit resource
+- Delete resource
+- Archive/Unarchive resource (change resource visibility)
+- Lock/Unlock resource (prevent visibility changes by the producer)
+- Add resource type
+- Add course
+- Add subject
 
-É responsabilidade do gestor da base de dados fornecer ou remover a permissão de administrador a um utilizador já existente.
+It is the responsibility of the database manager to grant or remove admin permissions from an existing user.
 
-Um utilizador produtor tem acesso às seguintes operações sobre os seus recursos:
+A producer user has access to the following operations on their resources:
 
-- Editar
-- Arquivar/Desarquivar
-- Eliminar
+- Edit
+- Archive/Unarchive
+- Delete
 
-Adicionalmente, a nossa aplicação permite a exitência de um utilizador **convidado**. Isto é, utilizadores não autenticados têm acesso à plataforma com acesso limitado às suas funcionalidades.
+Additionally, our application allows for a **guest** user. That is, unauthenticated users have access to the platform with limited functionality.
 
-Um utilizador convidado é apenas consumidor de todos os recursos, podendo transferir os mesmos e visualizar todos os seus detalhes. Pode também visualizar os perfis de outros utilizadores e as suas interações. No entanto, um utilizador convidado **não** tem acesso às seguintes funcionalidades:
+A guest user is only a consumer of all resources, being able to download them and view all their details. They can also view other users' profiles and their interactions. However, a guest user **does not** have access to the following features:
 
-- Interagir com um recurso:
-  - _Upvote_
-  - _Downvote_
-  - Comentar
-  - 'Favoritar'
-- Aceder à página de favoritos
-- Submeter novos recursos
+- Interact with a resource:
+  - Upvote
+  - Downvote
+  - Comment
+  - Favorite
+- Access the favorites page
+- Submit new resources
 
-O utilizador é incentivado a autenticar-se no sistema quanto tenta aceder a funcionalidades exclusivas.
+Users are encouraged to authenticate themselves when attempting to access exclusive features.
 
 ![NoPermission](/assets/nopermission.png)
 
-Todos estes níveis de acesso estendem-se à API desenvolvida, que conta com verificações de sessão para assegurar a autenticação do utilizador que realiza o pedido e a proteção de _endpoints_ sensíveis.
+All these access levels extend to the developed API, which includes session checks to ensure user authentication and the protection of sensitive endpoints.
 
 ## 🔗 REST API
 
-A API desenvolvida conta com os seguintes _endpoints_, devidamente protegidos com autenticação através de _tokens_ de sessão, quando aplicável.
+The developed API has the following endpoints, properly protected with session token authentication where applicable.
 
-**Recursos**
+**Resources**
 
-- **POST /api/resources** - Submeter recurso
-- **GET /api/resources/all/[page]** - Listar todos os recursos
-- **GET /api/resources/popular/[page]** - Listar recursos visíveis (por popularidade)
-- **GET /api/resources/newewst/[page]** - Listar recursos visíveis (por mais recentes)
-- **GET /api/resources/count** - Obter número total de recursos
-- **GET /api/resources/[rid]** - Obter recurso
-- **PUT /api/resources/[rid]** - Editar recurso
-- **DELETE /api/resources/[rid]** - Eliminar recurso
-- **GET /api/resources/[rid]/comments** - Listar comentários do recurso
-- **GET /api/resources/[rid]/download** - Transferir conteúdo do recurso
-- **POST /api/resources/[rid]/hide** - Arquivar recurso
-- **POST /api/resources/[rid]/show** - Desarquivar recurso
-- **POST /api/resources/[rid]/lock** - Bloquear recurso
-- **POST /api/resources/[rid]/unlock** - Desbloquear recurso
-- **GET /api/resources/from/[uemail]/[page]** - Listar recursos do utilizador
-- **GET /api/resources/from/[uemail]/count** - Obter número total de recursos do utilizador
-- **GET /api/resources/ids/[page]** - Listar recursos pedidos
-- **GET /api/resources/ids/[page]/count** - Obter número total de recursos pedidos
+- **POST /api/resources** - Submit resource
+- **GET /api/resources/all/[page]** - List all resources
+- **GET /api/resources/popular/[page]** - List visible resources (by popularity)
+- **GET /api/resources/newest/[page]** - List visible resources (by newest)
+- **GET /api/resources/count** - Get total number of resources
+- **GET /api/resources/[rid]** - Get resource
+- **PUT /api/resources/[rid]** - Edit resource
+- **DELETE /api/resources/[rid]** - Delete resource
+- **GET /api/resources/[rid]/comments** - List resource comments
+- **GET /api/resources/[rid]/download** - Download resource content
+- **POST /api/resources/[rid]/hide** - Archive resource
+- **POST /api/resources/[rid]/show** - Unarchive resource
+- **POST /api/resources/[rid]/lock** - Lock resource
+- **POST /api/resources/[rid]/unlock** - Unlock resource
+- **GET /api/resources/from/[uemail]/[page]** - List user's resources
+- **GET /api/resources/from/[uemail]/count** - Get total number of user's resources
+- **GET /api/resources/ids/[page]** - List requested resources
+- **GET /api/resources/ids/[page]/count** - Get total number of requested resources
 
-`page`: Página a ser obtida
-`rid`: ID do recurso
-`uemail`: Email do utilizador
-
----
-
-**Utilizadores**
-
-- **GET /api/users/[uemail]** - Obter dados do utilizador
-- **PUT /api/users/[uemail]** - Editar dados do utilizador
-- **POST /api/users/[uemail]/upvote** - _Upvote_ de um recurso
-- **DELETE /api/users/[uemail]/upvote** - Remover _upvote_ de um recurso
-- **POST /api/users/[uemail]/downvote** - _Downvote_ de um recurso
-- **DELETE /api/users/[uemail]/downvote** - Remover _downvote_ de um recurso
-- **GET /api/users/[uemail]/favorites** - Obter recursos favoritos do utilizador (IDs)
-- **POST /api/users/[uemail]/favorites** - Adicionar recurso favorito
-- **DELETE /api/users/[uemail]/favorites** - Remover recurso favorito
-
-`uemail`: Email do utilizador
+`page`: Page to retrieve
+`rid`: Resource ID
+`uemail`: User email
 
 ---
 
-**Cursos**
+**Users**
 
-- **GET /api/courses** - Listar cursos
-- **POST /api/courses** - Adicionar curso
+- **GET /api/users/[uemail]** - Get user data
+- **PUT /api/users/[uemail]** - Edit user data
+- **POST /api/users/[uemail]/upvote** - Upvote a resource
+- **DELETE /api/users/[uemail]/upvote** - Remove upvote from a resource
+- **POST /api/users/[uemail]/downvote** - Downvote a resource
+- **DELETE /api/users/[uemail]/downvote** - Remove downvote from a resource
+- **POST /api/users/[uemail]/favorite** - Favorite a resource
+- **DELETE /api/users/[uemail]/favorite** - Remove resource from favorites
+- **POST /api/users/[uemail]/comment** - Comment on a resource
+- **DELETE /api/users/[uemail]/comment** - Delete resource comment
+- **GET /api/users/[uemail]/comments** - List user comments
+- **GET /api/users/[uemail]/favorites/[page]** - List user favorites
+- **GET /api/users/[uemail]/favorites/count** - Get total number of user favorites
+- **GET /api/users/[uemail]/votes/[page]** - List user votes
+- **GET /api/users/[uemail]/votes/count** - Get total number of user votes
+
+`page`: Page to retrieve
+`uemail`: User email
 
 ---
 
-**Unidades Curriculares**
+**Courses**
 
-- **GET /api/subjects** - Listar unidades curriculares
-- **POST /api/subjects** - Adicionar unidade curricular
-
----
-
-**Tipos de Recurso**
-
-- **GET /api/documentType** - Listar tipos de recurso
-- **POST /api/documentType** - Adicionar tipo de recurso
+- **POST /api/courses** - Add course
+- **GET /api/courses** - List all courses
 
 ---
 
-**Autenticação**
+**Subjects**
+
+- **POST /api/subjects** - Add subject
+- **GET /api/subjects** - List all subjects
+
+---
+
+**Resource Types**
+
+- **GET /api/documentType** - List resource types
+- **POST /api/documentType** - Add resource type
+
+---
+
+**Authentication**
 
 - **/api/auth/...**
 
-Gerido pela biblioteca **NextAuth.js**.
+Managed by the **NextAuth.js** library.
 
 ## 📦 Export / Import
 
-Foram desenvolvidos dois _bash scripts_ responsáveis por a qualquer momento exportar ou importar o estado atual de todo o sistema, desde o conteúdo da base de dados até aos ficheiros armazenados localmente no servidor. O conteúdo exportado é guardado numa pasta _snapshot_ que inclui a data da exportação no seu nome. Para importar um estado, basta fornecer como argumento o caminho para a pasta que contém a _snapshot_ pretendida.
+Two bash scripts have been developed to export or import the current state of the entire system at any time, from the database content to the files stored locally on the server. The exported content is saved in a _snapshot_ folder that includes the date of the export in its name. To import a state, simply provide the path to the folder containing the desired _snapshot_ as an argument.
 
-Os _scripts_ devem ser executados a partir da raíz do projeto da seguinte forma:
+The scripts should be executed from the root of the project as follows:
 
 **Export**
 
@@ -276,22 +285,22 @@ Os _scripts_ devem ser executados a partir da raíz do projeto da seguinte forma
 **Import**
 
 ```bash
-./scripts/import.sh <caminho-para-snapshot>
+./scripts/import.sh <path-to-snapshot>
 ```
 
-Esta funcionalidade é essencial para, por exemplo, efetuar _backups_ regulares de informações críticas, algo que é fundamental num contexto real.
+This functionality is essential for, for example, performing regular backups of critical information, which is fundamental in a real-world context.
 
-## 🛠️ Tecnologias & Ferramentas Utilizadas
+## 🛠️ Technologies & Tools Used
 
-O projeto foi desenvolvido de forma monolítica utilizando a _framework_ **Next.js** com TypeScript e TailwindCSS, que contém tanto a implementação da página web tanto a implementação de uma REST API, responsável por comunicar com a base de dados e realizar diversas operações. Para além disso, utilizamos a biblioteca de componentes **shadcn/ui** para auxiliar um desenvolvimento mais rápido e perfecionista dos diversos componentes da plataforma.
+The project was developed monolithically using the **Next.js** framework with **TypeScript** and **TailwindCSS**, which includes both the web page implementation and the implementation of a REST API, responsible for communicating with the database and performing various operations. Additionally, we used the **shadcn/ui** component library to assist in faster and more perfectionist development of the various components of the platform.
 
-Foi utilizado **MongoDB** como base de dados para armazenar toda a informação relativa a recursos, utilizadores, interações, sessão, cursos, unidades curriculares e tipos de documentos. Já os ficheiros submetidos pelos utilizadores são armazenados localmente do lado do servidor, ficando públicos. Num contexto real, esta opção seria subsituída por o armazenamento dos ficheiros num serviço dedicado na nuvem como AWS ou outro, e seria fácil a transição para esse modelo a partir da implementação atual.
+**MongoDB** was used as the database to store all information related to resources, users, interactions, sessions, courses, curricular units, and document types. User-submitted files are stored locally on the server and are public. In a real-world context, this option would be replaced by storing the files in a dedicated cloud service like AWS or another, and transitioning to this model from the current implementation would be easy.
 
-Para gestão de toda a autenticação do sistema foi utilizada a biblioteca **NextAuth.js**.
+The **NextAuth.js** library was used to manage all system authentication.
 
-## 📥 Pré-Requisitos
+## 📥 Prerequisites
 
-A execução da aplicação requer o seguinte _software_:
+Running the application requires the following software:
 
 - [Node.js 20.11.1+](https://nodejs.org/en/download/)
 - mongosh
@@ -301,13 +310,13 @@ A execução da aplicação requer o seguinte _software_:
 
 ## 🔧 Setup
 
-É necessário instalar todas as dependências.
+Install all dependencies.
 
 ```bash
 npm install
 ```
 
-É necessário configurar um ficheiro `.env.local` com variáveis de ambiente necessárias ao funcionamento da aplicação, incluindo segredos. Na raíz do projeto, o ficheiro `.env.local.sample` apresenta uma template com as variáveis necessárias:
+You need to configure a `.env.local` file with environment variables required for the application to function, including secrets. In the root of the project, the `.env.local.sample` file provides a template with the necessary variables:
 
 ```
 NEXTAUTH_SECRET = <your-generated-secret>
@@ -319,22 +328,22 @@ NEXTAUTH_URL = <your-website-url>
 
 ## 🔨 Development
 
-Executar o projeto num ambiente conteinerizado.
+Run the project in a containerized environment.
 
 ```
 docker compose up
 ```
 
 > [!NOTE]  
-> Utilizar a _flag_ `--build` numa primeira execução.
+> Use the `--build` flag on the first run.
 
-Formatar o código.
+Format the code.
 
 ```bash
 npm run format
 ```
 
-## 🔗 Referências
+## 🔗 References
 
 - [Getting Started with React](https://reactjs.org/docs/getting-started.html)
 - [Learn Next.js](https://nextjs.org/learn)
@@ -342,7 +351,7 @@ npm run format
 - [Get Started with Docker](https://www.docker.com/get-started/)
 - [shadcn/ui](https://ui.shadcn.com/docs)
 
-## 👥 Equipa
+## 👥 Team
 
 - Carlos Ribeiro, A100761
 - Diogo Matos, A100741
