@@ -2,7 +2,7 @@
 
 # 🎓 UniShare
 
-**UniShare** is a web platform developed as part of the Web Engineering course for the academic year 2023/2024. Its main goal is to serve as a hub of study support materials for the entire academic community, regardless of course or subject.
+**UniShare** is a web app developed as part of the Web Engineering course for the academic year 2023/2024. Its main goal is to serve as a hub of study support materials for the entire academic community, regardless of course or subject.
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/diogogmatos/EngWeb2024-Projeto/blob/main/README.md) [![pt-pt](https://img.shields.io/badge/lang-pt--pt-green.svg)](https://github.com/diogogmatos/EngWeb2024-Projeto/blob/main/README.pt-pt.md)
 
