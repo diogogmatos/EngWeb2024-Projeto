@@ -6,7 +6,7 @@ A **UniShare** é uma plataforma web desenvolvida no âmbito da unidade curricul
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/diogogmatos/EngWeb2024-Projeto/blob/main/README.md)
 
-## 🏆 Results
+## 🏆 Resultados
 
 > 🏅 **20/20**
 
