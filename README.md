@@ -4,6 +4,10 @@
 
 A **UniShare** é uma plataforma web desenvolvida no âmbito da unidade curricular de Engenharia Web no ano letivo de 2023/2024. O seu principal objetivo é ser um _hub_ de materiais de apoio ao estudo para toda a comunidade académica e para qualquer curso ou unidade curricular.
 
+## 🏆 Results
+
+> 🏅 **20/20**
+
 ## 📒 Funcionalidades
 
 ### Dashboard
